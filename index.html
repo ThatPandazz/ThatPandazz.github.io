@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Steam Deck</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>What is a steam deck?</h2>
+    <p>The Steam Deck is a handheld gaming computer developed by Valve and released on February 25, 2022. The device uses Valve's Linux distribution SteamOS, which incorporates the namesake Steam storefront. SteamOS incorporates Valve's Proton compatibility layer, allowing users to run Windows applications and games.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Specs</h2>
+    <p>Processor
+AMD APU
+CPU: Zen 2 4c/8t, 2.4-3.5GHz (up to 448 GFlops FP32)
+GPU: 8 RDNA 2 CUs, 1.0-1.6GHz (up to 1.6 TFlops FP32)
+APU power: 4-15W
+RAM
+16 GB LPDDR5 on-board RAM (5500 MT/s quad 32-bit channels)
+Storage
+64 GB eMMC (PCIe Gen 2 x1)
+256 GB NVMe SSD (PCIe Gen 3 x4 or PCIe Gen 3 x2*)
+512 GB high-speed NVMe SSD (PCIe Gen 3 x4 or PCIe Gen 3 x2*)
+
+All models use socketed 2230 m.2 modules (not intended for end-user replacement)
+All models include high-speed microSD card slot
+*Some 256GB and 512GB models ship with a PCIe Gen 3 x2 SSD. In our testing, we did not see any impact to gaming performance between x2 and x4.
+      
+      Resolution
+1280 x 800px (16:10 aspect ratio)
+Type
+Optically bonded IPS LCD for enhanced readability
+Display size
+7" diagonal
+Brightness
+400 nits typical
+Refresh rate
+60Hz
+Touch enabled
+Yes
+Sensors
+Ambient light sensor</p>
+  </div>
+  
+  <div class="column">
+    <h2></h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+
+</body>
+</html>
