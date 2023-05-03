@@ -1,0 +1,17 @@
+body {
+background-image: url("background1test.jpg");
+background-repeat: repeat-x
+background-repeat: repeat-y
+}   
+
+.header{
+    color: aliceblue
+        }
+
+p{
+    color: aliceblue
+}
+
+h2{
+    color: aliceblue
+}
